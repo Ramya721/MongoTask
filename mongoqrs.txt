@@ -1,0 +1,60 @@
+//1. Users Collection:
+{
+    "_id": ObjectId("user_id"),
+    "username": "john_doe",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "role": "student",
+    "enrollment_date": ISODate("2023-01-15T00:00:00Z"),
+    // Additional user information
+}
+2. CodeKata Collection:
+{
+    "_id": ObjectId("codekata_id"),
+    "title": "Introduction to Algorithms",
+    "description": "Learn fundamental algorithms",
+    "start_date": ISODate("2023-02-01T00:00:00Z"),
+    "end_date": ISODate("2023-03-01T00:00:00Z"),
+    // Additional codekata information
+}
+3. Attendance Collection:
+{
+    "_id": ObjectId("attendance_id"),
+    "user_id": ObjectId("user_id"),
+    "codekata_id": ObjectId("codekata_id"),
+    "date": ISODate("2023-02-15T00:00:00Z"),
+    "attended": true,
+    // Additional attendance information
+}
+4. Topics Collection:
+{
+    "_id": ObjectId("topic_id"),
+    "title": "Data Structures",
+    "description": "Study different data structures",
+    "codekata_id": ObjectId("codekata_id"),
+    // Additional topic information
+}
+5. Tasks Collection:
+{
+    "_id": ObjectId("task_id"),
+    "title": "Implement a Linked List",
+    "description": "Create a linked list data structure",
+    "topic_id": ObjectId("topic_id"),
+    // Additional task information
+}
+6. Company Drives Collection:
+{
+    "_id": ObjectId("drive_id"),
+    "company_name": "TechCo Inc.",
+    "drive_date": ISODate("2023-04-15T00:00:00Z"),
+    "location": "Virtual",
+    // Additional company drive information
+}
+7. Mentors Collection:
+{
+    "_id": ObjectId("mentor_id"),
+    "name": "Jane Smith",
+    "email": "jane@example.com",
+    "specialization": "Algorithms",
+    // Additional mentor information
+}
